@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "iaq_board")(type "KiCad")(uri "${KIPRJMOD}/../my_libs/footprints/")(options "")(descr ""))
+)

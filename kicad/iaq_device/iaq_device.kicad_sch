@@ -1489,7 +1489,7 @@
     (property "Value" "WeMos_D1_mini_ESP32" (at 68.58 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Module:WEMOS_D1_mini_light" (at 62.23 105.41 0)
+    (property "Footprint" "iaq_board:WEMOS_D1_surface" (at 62.23 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://wiki.wemos.cc/products:d1:d1_mini#documentation" (at 15.24 105.41 0)
