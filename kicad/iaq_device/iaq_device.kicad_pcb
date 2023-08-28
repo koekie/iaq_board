@@ -47,7 +47,7 @@
       (layerselection 0x00010fc_ffffffff)
       (plot_on_all_layers_selection 0x0000000_00000000)
       (disableapertmacros false)
-      (usegerberextensions true)
+      (usegerberextensions false)
       (usegerberattributes true)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
@@ -1730,6 +1730,9 @@
   (gr_text "https://github.com/koekie/iaq_board" (at 124.206 115.824) (layer "B.SilkS") (tstamp 6847776d-ed42-4906-a7df-531fba1ba6c4)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
+  (gr_text "JLCJLCJLCJLC" (at 117.62 96.46) (layer "B.SilkS") (tstamp e674b637-b663-4b04-a3e2-6332d9134ba1)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
+  )
   (gr_text "LED 3" (at 140.22 114.5) (layer "F.SilkS" knockout) (tstamp 00000000-0000-0000-0000-00005e03e7cb)
     (effects (font (face "FiraCode Nerd Font Mono") (size 1 1) (thickness 0.2) bold))
     (render_cache "LED 3" 0
@@ -2058,9 +2061,6 @@
   )
   (gr_text "5V" (at 135.9535 85.852 90) (layer "F.SilkS") (tstamp ff76d91a-e7e8-4160-9356-e1b80ad3035f)
     (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (gr_text "JLCJLCJLCJLC" (at 117.62 96.46) (layer "B.Mask") (tstamp e674b637-b663-4b04-a3e2-6332d9134ba1)
-    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
   )
 
   (segment (start 103.886 83.566) (end 106.094 83.566) (width 0.254) (layer "F.Cu") (net 1) (tstamp 46b2f957-4693-476b-9f41-f7fd10a29ca9))
