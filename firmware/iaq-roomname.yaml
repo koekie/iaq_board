@@ -1,0 +1,10 @@
+# woonkamer air quality configuration
+substitutions:
+  device_name: "iaq-roomname"
+  friendly_name: "IAQ Room"
+
+packages:
+  iaq_board: !include includes/iaq-board.yaml
+  common: !include includes/common.yaml
+        
+

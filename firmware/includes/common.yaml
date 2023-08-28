@@ -1,0 +1,28 @@
+# Common config for all esphome projects
+
+wifi:
+  ssid: !secret wifi_iot_ssid
+  password: !secret wifi_iot_password
+  fast_connect: true
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "$friendly_name Fallback Hotspot"
+    password: !secret ap_fallback_hotspot_password
+
+captive_portal:
+
+logger:
+  baud_rate: 0
+  
+web_server:
+  port: 80
+
+api:
+  encryption:
+    key: !secret encryption_key
+  reboot_timeout: 0s
+
+ota:
+  password: !secret ota_password
+
