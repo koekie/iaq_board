@@ -1,3 +1,20 @@
+# Installing in HA
+
+I have a created a private repository for myself for all my esphome configs, the files in this repo can be considered templates as such. I describe the steps you can take to create a similar setup.
+
+1. Copy the contents of this dir to a repository you can commit to.
+1. Rename and change the `iaq-roomname.yaml` to your situation. In case you have more iaq boards make copies of this file and change accordingly.
+1. Install the ESPHOME add-on
+1. Checkout this repo in your HA installation so that the root is in `/config/esphome/`
+1. Make sure the following secrets are set in your `/config/secrets.yaml` (so not the `secrets.yaml`'s in this repo, those are just including the `secrets.yaml` one dir above.
+  - `wifi_iot_ssid`
+  - `wifi_iot_password`
+  - `ap_fallback_hotspot_password`
+  - `encryption_key`
+  - `ota_password`
+1. The first time you cannot flash OTA, so consult the esphome documentation to flash the ESP32 while plugged in. I was not able to flash my wemos d1 esp32 while plugged in to the iaq pcd, so disconnect from that if this is also the case for you. It is able to receive OTA updates while plugged in.
+
+
 # Firmware
 
 Firmware is created with [ESPHome](https://esphome.io/index.html) -  it is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
